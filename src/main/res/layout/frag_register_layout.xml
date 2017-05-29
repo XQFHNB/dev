@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/login_logo"/>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+        <EditText
+            android:id="@+id/editV_frag_login_or_register_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/bg_edittext_phone"
+            android:drawableLeft="@drawable/login_edittext_drawable_left_phone"
+            android:hint="请输入手机号"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext_phone"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <EditText
+            android:id="@+id/editV_frag_login_or_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/login_edittext_drawable_left_password"
+            android:hint="请输入密码"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"/>
+
+        <EditText
+            android:id="@+id/editV_frag_login_or_register_password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:drawableLeft="@drawable/login_edittext_drawable_left_password"
+            android:hint="请输入密码"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_next_step"
+        android:text="确认注册"
+        android:textColor="#ffffff"/>
+
+
+</LinearLayout>

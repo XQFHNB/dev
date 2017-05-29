@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_offline_description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_searchview"
+                android:gravity="start"
+                android:hint="填写活动描述"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="选择标签"/>
+
+            <zhouyou.flexbox.widget.TagFlowLayout
+                android:id="@+id/flowlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </zhouyou.flexbox.widget.TagFlowLayout>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/activity_offline_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_searchview"
+            android:hint="填写时间"/>
+
+        <TextView
+            android:id="@+id/activity_offline_where"
+            android:layout_width="match_parent"
+
+            android:layout_height="30dp"
+            android:background="@drawable/bg_searchview"
+            android:hint="填写地点"/>
+
+        <TextView
+            android:id="@+id/activity_offline_num"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_searchview"
+            android:hint="填写期望人数"/>
+
+        <TextView
+            android:id="@+id/activity_offline_money"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_searchview"
+            android:hint="填写参与者的支付金币"/>
+
+        <ImageButton
+            android:id="@+id/activity_offline_imagebtn_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add"/>
+
+        <Button
+            android:id="@+id/acttivity_offline_publish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="支付押金XXXX金币，发表任务"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
